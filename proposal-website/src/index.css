@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.floating-hearts {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.floating-hearts::before {
+  content: "💖 💘 💝 💓 💗 💞 💕 ❤️";
+  font-size: 32px;
+  position: absolute;
+  animation: floatHearts 20s linear infinite;
+  white-space: nowrap;
+  width: 100%;
+  opacity: 0.2;
+}
+
+@keyframes floatHearts {
+  0% {
+    transform: translateY(100%) translateX(0%);
+  }
+
+  100% {
+    transform: translateY(-100%) translateX(-50%);
+  }
+}

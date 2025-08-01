@@ -1,11 +1,16 @@
 import React from 'react';
 import ProposalWebsite from './ProposalWebsite';
+import BirthdayLovePage from './BirthdayPage';
+import RomanticBirthdaySurprise from './RomanticBirthdaySurprise';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <ProposalWebsite />
+      {/* <ProposalWebsite /> */}
+      {/* {<BirthdayLovePage />} */}
+      {<RomanticBirthdaySurprise />}
     </div>
   );
 }
